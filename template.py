@@ -10,13 +10,13 @@ package_name = "DeepClassifier"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
-    f"src/{package_name}/__init.py",
-    f"src/{package_name}/components/__init.py",
-    f"src/{package_name}/entity/__init.py",
-    f"src/{package_name}/constants/__init.py",
-    f"src/{package_name}/pipeline/__init.py",
-    f"src/{package_name}/config/__init.py",
-    f"src/{package_name}/utils/__init.py",
+    f"src/{package_name}/__init__.py",
+    f"src/{package_name}/components/__init__.py",
+    f"src/{package_name}/entity/__init__.py",
+    f"src/{package_name}/constants/__init__.py",
+    f"src/{package_name}/pipeline/__init__.py",
+    f"src/{package_name}/config/__init__.py",
+    f"src/{package_name}/utils/__init__.py",
     # exception, logger, artifact can be added in src/package_name
     "tests/__init__.py",
     "tests/unit/__init__.py",
