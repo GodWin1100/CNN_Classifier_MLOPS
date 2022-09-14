@@ -16,8 +16,7 @@ setuptools.setup(
     author_email=AUTHOR_EMAIL,
     description="Deep CNN Classifier with MLOPS",
     long_description=long_description,
-    long_description_content="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-    package_dir={"": ""},
+    package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
 )
