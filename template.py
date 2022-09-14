@@ -18,6 +18,9 @@ list_of_files = [
     f"src/{package_name}/config/__init.py",
     f"src/{package_name}/utils/__init.py",
     # exception, logger, artifact can be added in src/package_name
+    "tests/__init__.py",
+    "tests/unit/__init__.py",
+    "tests/integration/__init__.py",
     "configs/config.yaml",
     "dvc.yaml",
     "params.yaml",
