@@ -37,9 +37,9 @@ for filepath in list_of_files:
     if file_dir:
         os.makedirs(file_dir, exist_ok=True)
         logging.info(f"Created Directory: {file_dir} for file: {filename}")
-    if not os.path.exists(filepath) or (
-        os.path.getsize(filepath) == 0
-    ):  # 2nd condition to avoid already exists if files are empty
+    if not os.path.exists(filepath) or (os.path.getsize(filepath) == 0):
+        # checking file or else it will overwrite
+        # 2nd condition to avoid already exists if files are empty
         with open(filepath, "w") as f:
             pass
         logging.info(f"Created empty file: {filepath}")
