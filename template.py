@@ -6,7 +6,7 @@ logging.basicConfig(
     format="[%(asctime)s] %(levelname)s: %(message)s",
     level=logging.INFO,
 )
-package_name = "DeepClassifier"
+package_name = "deepclassifier"
 
 list_of_files = [
     ".github/workflows/.gitkeep",

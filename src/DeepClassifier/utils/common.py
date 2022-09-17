@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 from box.exceptions import BoxValueError
 from ensure import ensure_annotations
-from DeepClassifier import logger
+from deepclassifier import logger
 
 
 @ensure_annotations

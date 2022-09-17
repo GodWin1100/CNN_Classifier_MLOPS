@@ -16,4 +16,4 @@ logging.basicConfig(
     ],
 )
 
-logger = logging.getLogger("DeepClassifierLogger")
+logger = logging.getLogger("deepclassifierLogger")
