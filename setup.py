@@ -5,7 +5,7 @@ with open("./README.md") as f:
 
 __version__ = "0.0.0"
 REPO_NAME = "CNN_Classifier_MLOPS"
-SRC_REPO = "DeepClassifier"
+SRC_REPO = "deepclassifier"
 AUTHOR_USER_NAME = "GodWin1100"
 AUTHOR_EMAIL = "shivamjpanchal1@gmail.com"
 
