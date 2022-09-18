@@ -1,4 +1,3 @@
-from tkinter import CENTER
 from deepclassifier.components import DataIngestion
 from deepclassifier.config import ConfigurationManager
 from deepclassifier import logger

@@ -35,10 +35,10 @@ class DataIngestion:
             logger.info(f"File Remove: {target_filepath}")
 
     def unzip_clean(self):
-        logger.info(f"Unzipping and Filtering Files")
+        logger.info("Unzipping and Filtering Files")
         with ZipFile(file=self.config.local_data_file, mode="r") as zf:
             list_of_files = zf.namelist()
             updated_list_of_files = self._get_updated_list_of_files(list_of_files)
             for f in tqdm(updated_list_of_files):
                 self._preprocess(zf, f, self.config.unzip_dir)
-        logger.info(f"Unzipping Done")
+        logger.info("Unzipping Done")
