@@ -8,7 +8,7 @@ from ensure.main import EnsureError
 
 # TODO pytest -v
 class Test_read_yaml:
-    yaml_files = [r"tests\data\demo.yaml", r"tests\data\empty.yaml"]
+    yaml_files = [r"tests/data/demo.yaml", r"tests/data/empty.yaml"]
 
     def test_read_yaml_empty(self):
         with pytest.raises(ValueError):  # if it raises
