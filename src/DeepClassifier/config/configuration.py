@@ -1,4 +1,4 @@
-from deepclassifier.constants import *
+from deepclassifier.constants import CONFIG_FILE_PATH, PARAM_FILE_PATH
 from deepclassifier.utils import read_yaml, create_directories
 from deepclassifier.entity import DataIngestionConfig
 
