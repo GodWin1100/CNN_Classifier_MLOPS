@@ -1,1 +1,1 @@
-from deepclassifier.entity.config_entity import DataIngestionConfig
+from deepclassifier.entity.config_entity import *
