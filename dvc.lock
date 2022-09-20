@@ -1,0 +1,11 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/deepclassifier/pipeline/s01_data_ingestion.py
+    deps:
+    - path: configs/config.yaml
+      md5: 6f6351c3058e0ca995c0d769ac27065c
+      size: 838
+    - path: src/deepclassifier/pipeline/s01_data_ingestion.py
+      md5: 74624a787989c880d43d15ad7ed3ba29
+      size: 716
