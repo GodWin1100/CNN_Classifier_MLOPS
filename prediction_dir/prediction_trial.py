@@ -15,7 +15,16 @@ print(arr)
 To run application as streamlit
 ```py
 streamlit run ./file/path.py
+streamlit run ./file/path.py --server.port PORT
 ```
+To check config which config can be configure `streamlit config show` or https://docs.streamlit.io/library/advanced-features/configuration
+
+To run docker image  
+```
+docker build image IMAGE_TAG
+docker run IMAGE_TAG -dp 5000:5000
+```
+
 """
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
