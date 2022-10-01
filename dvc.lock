@@ -9,3 +9,8 @@ stages:
     - path: src/deepclassifier/pipeline/s01_data_ingestion.py
       md5: 74624a787989c880d43d15ad7ed3ba29
       size: 716
+    outs:
+    - path: artifacts/data_ingestion/PetImages
+      md5: 3a5cf86541f22c236620ce5b952ad684.dir
+      size: 848866410
+      nfiles: 24998
