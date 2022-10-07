@@ -14,6 +14,7 @@ from sklearn.linear_model import ElasticNet
 from urllib.parse import urlparse
 import mlflow
 import mlflow.sklearn
+from mlflow.models import infer_signature
 
 import logging
 
@@ -54,7 +55,7 @@ if __name__ == "__main__":
     # ! For connecting to backend server run the below command
     # ? mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 --port 5000
     # ? set_tracking_uri to the mentioned host and port where server is running so it can connect
-    # set tracking uri before start_run in local env so it can connect and not in start_run else it will be not connected to same uri
+    # TODO set tracking uri before start_run in local env so it can connect and not in start_run else it will be not connected to same uri
     # mlflow.set_tracking_uri("http://localhost:5000")
 
     with mlflow.start_run():
@@ -81,12 +82,14 @@ if __name__ == "__main__":
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         print(mlflow.get_tracking_uri())
         # Model registry does not work with file store
+        signature = infer_signature(train_x, lr.predict(train_x))  # ? For input and output feature and it's datatype
+        print(signature)
         if tracking_url_type_store != "file":
             print(tracking_url_type_store)
             # Register the model
             # There are other ways to use the Model Registry, which depends on the use case,
             # please refer to the doc for more information:
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-            mlflow.sklearn.log_model(lr, "model", registered_model_name="ElasticnetWineModel")
+            mlflow.sklearn.log_model(lr, "model", registered_model_name="ElasticnetWineModel", signature=signature)
         else:
             mlflow.sklearn.log_model(lr, "model")
