@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Programming/PROJECTS/Data%20Science/FSDS/CNN_Classifier_MLOPS/research/mlflow_dir/mlruns/0/bad77b281e9d4653a8b82a9cf5d392d7/artifacts
+end_time: 1670923452386
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: bad77b281e9d4653a8b82a9cf5d392d7
+run_uuid: bad77b281e9d4653a8b82a9cf5d392d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670923438275
+status: 3
+tags: []
+user_id: GodWin
